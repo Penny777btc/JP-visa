@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本签证路径知识库 | 技人国 → 高度専門職 → 永住</title>
+  <meta name="description" content="从技術·人文知識·国際業務签证，到高度専門職（HSP），再到永住者（PR）的完整申请路径、积分计算、文件清单和常见拒签原因分析。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇯🇵</text></svg>">
+</head>
+<body>
+
+<!-- ══════ Header ══════ -->
+<header class="header">
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  <span class="header-flag">🇯🇵</span>
+  <span class="header-logo">签证路径知识库</span>
+  <div class="header-search">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="搜索关键词：永住、积分、年金、N1...">
+  </div>
+</header>
+
+<!-- ══════ Sidebar Overlay ══════ -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- ══════ Sidebar Navigation ══════ -->
+<nav class="sidebar" id="sidebar">
+  <div class="nav-group">
+    <div class="nav-group-title"><span class="stage-badge s1">1</span>技人国签证 &amp; 积分评估</div>
+    <ul class="nav-items">
+      <li class="nav-item"><a href="#s1-overview">1.1 签证概要</a></li>
+      <li class="nav-item"><a href="#s1-categories">1.2 雇主分类与材料</a></li>
+      <li class="nav-item"><a href="#s1-renewal">1.3 续签要点</a></li>
+      <li class="nav-item"><a href="#s1-points">1.4 积分自我评估</a></li>
+      <li class="nav-item"><a href="#s1-education">学历加分</a></li>
+      <li class="nav-item"><a href="#s1-income">年收入加分</a></li>
+      <li class="nav-item"><a href="#s1-bonus">特别加分项</a></li>
+    </ul>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-title"><span class="stage-badge s2">2</span>转「高度専門職」申请</div>
+    <ul class="nav-items">
+      <li class="nav-item"><a href="#s2-legal">2.1 法律依据</a></li>
+      <li class="nav-item"><a href="#s2-prereq">2.2 申请前确认</a></li>
+      <li class="nav-item"><a href="#s2-docs">2.3 文件清单</a></li>
+      <li class="nav-item"><a href="#s2-review">2.4 审查要点</a></li>
+      <li class="nav-item"><a href="#s2-rejection">2.5 常见拒签原因</a></li>
+    </ul>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-title"><span class="stage-badge s3">3</span>永住优惠通道</div>
+    <ul class="nav-items">
+      <li class="nav-item"><a href="#s3-overview">3.1 制度概述</a></li>
+      <li class="nav-item"><a href="#s3-fasttrack">3.2 快速通道规则</a></li>
+      <li class="nav-item"><a href="#s3-retroactive">3.2.2 追溯计算</a></li>
+      <li class="nav-item"><a href="#s3-residence">3.2.3 居住期间计算</a></li>
+      <li class="nav-item"><a href="#s3-hsp2">3.3 高度専門職2号</a></li>
+    </ul>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-title"><span class="stage-badge s4">4</span>永住申请审核标准</div>
+    <ul class="nav-items">
+      <li class="nav-item"><a href="#s4-requirements">4.1 三大法律要件</a></li>
+      <li class="nav-item"><a href="#s4-obligations">公的义务履行</a></li>
+      <li class="nav-item"><a href="#s4-docs">4.2 文件清单</a></li>
+      <li class="nav-item"><a href="#s4-rejection">4.3 常见拒签原因</a></li>
+    </ul>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-title"><span class="stage-badge sx">+</span>附录</div>
+    <ul class="nav-items">
+      <li class="nav-item"><a href="#appendix-jskip">J-Skip 制度</a></li>
+      <li class="nav-item"><a href="#appendix-timeline">时间线规划</a></li>
+      <li class="nav-item"><a href="#appendix-links">官方链接汇总</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════ Main Content ══════ -->
+<main class="main-content">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>技術·人文知識·国際業務 → 高度専門職 → 永住者</h1>
+    <div class="hero-meta">
+      <span>📋 资深行政书士视角</span>
+      <span>⚖️ 永住許可ガイドライン（令和8年2月24日改订）</span>
+      <span>🏛️ 出入国在留管理厅官方数据</span>
+    </div>
+    <div class="hero-tags">
+      <span class="tag">#技人国</span>
+      <span class="tag">#HSP</span>
+      <span class="tag">#高度人才</span>
+      <span class="tag">#永住</span>
+      <span class="tag">#PR</span>
+      <span class="tag">#积分制</span>
+      <span class="tag">#J-Skip</span>
+    </div>
+  </div>
+
+  <!-- ═══════ STAGE 1 ═══════ -->
+  <div class="section" id="s1-overview">
+    <div class="section-header">
+      <span class="section-number" style="background:var(--accent-blue)">1</span>
+      <h2>技術·人文知識·国際業務 签证维持与积分评估</h2>
+    </div>
+
+    <div class="subsection">
+      <h3>📄 1.1 签证概要</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>项目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td><strong>在留资格</strong></td><td>技術・人文知識・国際業務（通称"技人国"）</td></tr>
+          <tr><td><strong>法律依据</strong></td><td>出入国管理及び難民認定法 別表第1の2</td></tr>
+          <tr><td><strong>活动范围</strong></td><td>基于与日本公私机构的合同，从事理学、工学、法律学、经济学等需要专门技术或知识的业务；或基于外国文化的思考/感受性的业务</td></tr>
+          <tr><td><strong>典型职业</strong></td><td>IT工程师、金融分析师、翻译、设计师、市场营销、语言教师</td></tr>
+          <tr><td><strong>在留期间</strong></td><td>5年、3年、1年、3个月</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s1-categories">
+      <h3>🏢 1.2 雇主分类与材料差异</h3>
+      <div class="callout important">
+        <div class="callout-title">⚡ 重要</div>
+        <p>技人国签证的申请材料因雇主（所属机关）的分类不同而有显著差异。这一分类在后续转HSP时同样适用。</p>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>分类</th><th>定义</th><th>材料复杂度</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cat 1</strong></td><td>上场企业、国/地方政府机关、独立行政法人等</td><td>最简</td></tr>
+          <tr><td><strong>Cat 2</strong></td><td>前年度源泉徴収税額合计 ≥ <strong>1,000万日元</strong></td><td>较简</td></tr>
+          <tr><td><strong>Cat 3</strong></td><td>提出了法定调书合计表但不符合Cat2标准</td><td>需详细材料</td></tr>
+          <tr><td><strong>Cat 4</strong></td><td>新设企业或不属于上述分类的小型机关</td><td>最复杂</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s1-renewal">
+      <h3>🔄 1.3 续签（在留期間更新）要点</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>项目</th><th>要求</th></tr></thead>
+        <tbody>
+          <tr><td><strong>住民税</strong></td><td>需提交前年度的课税证明书和纳税证明书</td></tr>
+          <tr><td><strong>工作连续性</strong></td><td>需证明持续从事与在留资格相符的活动</td></tr>
+          <tr><td><strong>手数料</strong></td><td>4,000日元（许可时缴纳收入印纸）</td></tr>
+          <tr><td><strong>审查期间</strong></td><td>2周～1个月</td></tr>
+        </tbody>
+      </table></div>
+      <div class="callout warning">
+        <div class="callout-title">⚠️ 续签常见拒签原因</div>
+        <ul>
+          <li>工作内容与在留资格不符（如实际从事体力劳动而非专业工作）</li>
+          <li>长期无业未申报活动变更</li>
+          <li>住民税未缴纳或未按时缴纳</li>
+          <li>频繁更换雇主且无合理说明</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection" id="s1-points">
+      <h3>📊 1.4 高度人才积分自我评估</h3>
+      <div class="callout tip">
+        <div class="callout-title">💡 核心策略</div>
+        <p>您无需等到变更签证才开始评分。在技人国期间就应使用积分计算表进行自我评估。如果已达70分甚至80分，即使不变更为HSP签证，也可在日后永住申请中<strong>"追溯"</strong>使用。</p>
+      </div>
+
+      <h4>三类活动类型</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>类型</th><th>代码</th><th>活动内容</th><th>适用人群</th></tr></thead>
+        <tbody>
+          <tr><td>高度学术研究</td><td>1号（イ）</td><td>研究、研究指导、教育</td><td>大学/研究机构从业者</td></tr>
+          <tr><td>高度专门・技术</td><td>1号（ロ）</td><td>自然科学/人文科学领域专门工作</td><td><strong>大多数技人国持有者适用</strong></td></tr>
+          <tr><td>高度经营・管理</td><td>1号（ハ）</td><td>事业经营/管理</td><td>企业高管/创业者</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s1-education">
+      <h4>📚 学历加分</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>条件</th><th>分值</th></tr></thead>
+        <tbody>
+          <tr><td>博士学位</td><td><strong>30分</strong></td></tr>
+          <tr><td>硕士学位（MBA等专门职学位含）</td><td><strong>20分</strong></td></tr>
+          <tr><td>学士学位</td><td><strong>10分</strong></td></tr>
+          <tr><td>拥有多个不同领域的硕/博学位</td><td>额外 <strong>+5分</strong></td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>💼 职业经历（相关实务经验年数 · ロ类）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>年数</th><th>分值</th></tr></thead>
+        <tbody>
+          <tr><td>10年以上</td><td><strong>25分</strong></td></tr>
+          <tr><td>7年以上</td><td><strong>20分</strong></td></tr>
+          <tr><td>5年以上</td><td><strong>15分</strong></td></tr>
+          <tr><td>3年以上</td><td><strong>10分</strong></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s1-income">
+      <h4>💰 年收入加分（報酬年額）</h4>
+      <div class="callout important">
+        <div class="callout-title">⚡ 年收入计算规则</div>
+        <p><strong>计入</strong>：基本工资 + 奖金 + 津贴（职务手当等）<br>
+        <strong>不计</strong>：加班费、通勤交通费、住房补贴<br>
+        <strong>最低门槛</strong>：ロ类/ハ类年收入 <strong>必须 ≥ 300万日元</strong>，否则不符合资格</p>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>年收入（万日元）</th><th>分值</th></tr></thead>
+        <tbody>
+          <tr><td>1,000万以上</td><td><strong>40分</strong></td></tr>
+          <tr><td>900万～不足1,000万</td><td><strong>35分</strong></td></tr>
+          <tr><td>800万～不足900万</td><td><strong>30分</strong></td></tr>
+          <tr><td>700万～不足800万</td><td><strong>25分</strong></td></tr>
+          <tr><td>600万～不足700万</td><td><strong>20分</strong></td></tr>
+          <tr><td>500万～不足600万</td><td><strong>15分</strong></td></tr>
+          <tr><td>400万～不足500万</td><td><strong>10分</strong></td></tr>
+          <tr><td>300万～不足400万</td><td><strong>5分</strong></td></tr>
+          <tr><td>不足300万</td><td><strong>0分</strong>（ロ/ハ类不符合资格）</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>🎂 年龄加分（仅ロ类）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>年龄</th><th>分值</th></tr></thead>
+        <tbody>
+          <tr><td>不满30岁</td><td><strong>15分</strong></td></tr>
+          <tr><td>30～不满35岁</td><td><strong>10分</strong></td></tr>
+          <tr><td>35～不满40岁</td><td><strong>5分</strong></td></tr>
+          <tr><td>40岁以上</td><td><strong>0分</strong></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s1-bonus">
+      <h4>⭐ 特别加分项（ボーナス）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>加分项</th><th>分值</th><th>证明材料</th></tr></thead>
+        <tbody>
+          <tr><td>在日本大学取得学位</td><td><strong>+10分</strong></td><td>毕业证书</td></tr>
+          <tr><td>Top Global University对象校毕业</td><td><strong>+10分</strong></td><td>毕业证书</td></tr>
+          <tr><td>世界排名前300大学毕业</td><td><strong>+10分</strong></td><td>毕业证书 + 排名证据</td></tr>
+          <tr><td>JLPT N1 合格</td><td><strong>+15分</strong></td><td>N1合格证书</td></tr>
+          <tr><td>JLPT N2 合格</td><td><strong>+10分</strong></td><td>N2合格证书</td></tr>
+          <tr><td>创新促进认定企业</td><td><strong>+10分</strong></td><td>企业认定书</td></tr>
+          <tr><td>法务大臣认定成长行业</td><td><strong>+10分</strong></td><td>雇佣合同</td></tr>
+          <tr><td>中小企业试验研究费扣除</td><td><strong>+5分</strong></td><td>确认书</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>📥 积分计算表下载</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>文件</th><th>链接</th></tr></thead>
+        <tbody>
+          <tr><td>综合积分计算表 (PDF 1.8MB)</td><td><a href="https://www.moj.go.jp/isa/content/930001655.pdf" target="_blank">📄 下载</a></td></tr>
+          <tr><td>评价项目・配点明细表</td><td><a href="https://www.moj.go.jp/isa/content/930001658.pdf" target="_blank">📄 下载</a></td></tr>
+          <tr><td>英文版宣传折页</td><td><a href="https://www.moj.go.jp/isa/content/001398892.pdf" target="_blank">📄 下载</a></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <!-- ═══════ STAGE 2 ═══════ -->
+  <div class="section" id="s2-legal">
+    <div class="section-header">
+      <span class="section-number" style="background:var(--accent-purple)">2</span>
+      <h2>从技人国转高度専門職的申请流程</h2>
+    </div>
+
+    <div class="subsection">
+      <h3>⚖️ 2.1 法律依据</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>项目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td><strong>申请类型</strong></td><td>在留資格変更許可申請（入管法第20条）</td></tr>
+          <tr><td><strong>变更对象</strong></td><td>技術・人文知識・国際業務 → 高度専門職1号（イ/ロ/ハ）</td></tr>
+          <tr><td><strong>手数料</strong></td><td>4,000日元（收入印纸）</td></tr>
+          <tr><td><strong>审查期间</strong></td><td>原则上 <strong>10个工作日</strong>（HSP享有优先处理）</td></tr>
+          <tr><td><strong>管辖</strong></td><td>申请人住所地的地方出入国在留管理局</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s2-prereq">
+      <h3>✅ 2.2 申请前确认事项</h3>
+      <div class="callout danger">
+        <div class="callout-title">🚨 不可忽视的前提条件</div>
+        <ol>
+          <li>积分必须达到 <strong>70分以上</strong></li>
+          <li>ロ类/ハ类的年收入必须 <strong>≥ 300万日元</strong></li>
+          <li>必须与日本的公私机关签有有效的雇佣合同</li>
+          <li>当前在留资格必须处于有效期内</li>
+          <li>不存在"素行不良"记录（刑事犯罪、严重交通违章等）</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="subsection" id="s2-docs">
+      <h3>📋 2.3 必备文件清单</h3>
+      <h4>共通文件（全类型）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>文件名</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>在留資格変更許可申請書</td><td>ISA官网下载标准格式</td></tr>
+          <tr><td>2</td><td>证件照（4cm × 3cm）</td><td>3个月以内拍摄</td></tr>
+          <tr><td>3</td><td>护照及在留卡</td><td>原件提示</td></tr>
+          <tr><td>4</td><td><strong>ポイント計算表</strong></td><td>与活动类型对应的版本</td></tr>
+          <tr><td>5</td><td>积分证明材料一式</td><td>学历、JLPT、职历证明等</td></tr>
+          <tr><td>6</td><td>雇佣合同书/辞令</td><td>展示劳动条件、年收入</td></tr>
+          <tr><td>7</td><td>回信用封筒</td><td>供入管局寄回结果</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>分类追加文件（因雇主类别而异）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>分类</th><th>追加文件</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cat 1</strong></td><td>四季報复印件或主管部门证明文件</td></tr>
+          <tr><td><strong>Cat 2</strong></td><td>法定调书合计表复印件（总源泉税额≥1,000万）</td></tr>
+          <tr><td><strong>Cat 3</strong></td><td>法定调书合计表 + 登记事项证明书 + 决算书 + 公司介绍</td></tr>
+          <tr><td><strong>Cat 4</strong></td><td>同Cat 3 + 事业计划书 + 追加说明材料</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s2-review">
+      <h3>🔍 2.4 审查要点</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>审查重点</th><th>详细说明</th></tr></thead>
+        <tbody>
+          <tr><td><strong>积分真实性</strong></td><td>逐项核实积分计算表中申报的分数与证明材料是否一致</td></tr>
+          <tr><td><strong>工作内容匹配</strong></td><td>确认HSP类型（イ/ロ/ハ）与实际工作一致</td></tr>
+          <tr><td><strong>雇佣稳定性</strong></td><td>正社员或长期合同优先；派遣需双重证明</td></tr>
+          <tr><td><strong>素行记录</strong></td><td>在留期间是否有违法行为、未申报的工作变更</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s2-rejection">
+      <h3>❌ 2.5 常见拒签原因</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>拒签原因</th><th>风险</th><th>应对策略</th></tr></thead>
+        <tbody>
+          <tr><td>积分计算错误（自评过高）</td><td class="risk-high">🔴 高</td><td>请行政书士进行第三方评估</td></tr>
+          <tr><td>年收入不达标（&lt;300万）</td><td class="risk-high">🔴 高</td><td>等年收入满足后再申请</td></tr>
+          <tr><td>职业经历证明不足</td><td class="risk-mid">🟡 中</td><td>尽早联络前雇主出具在职证明</td></tr>
+          <tr><td>雇佣合同年收入含加班费</td><td class="risk-mid">🟡 中</td><td>让公司出具「年収見込証明書」</td></tr>
+          <tr><td>所在企业为Cat 4小微企业</td><td class="risk-mid">🟡 中</td><td>准备详细事业计划书</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <!-- ═══════ STAGE 3 ═══════ -->
+  <div class="section" id="s3-overview">
+    <div class="section-header">
+      <span class="section-number" style="background:var(--accent-teal)">3</span>
+      <h2>高度人才转永住的优惠通道</h2>
+    </div>
+
+    <div class="subsection">
+      <h3>📖 3.1 制度概述</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>项目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td><strong>法律依据</strong></td><td>入管法第22条 + 永住許可ガイドライン（令和8年2月24日改订）</td></tr>
+          <tr><td><strong>制度本质</strong></td><td>普通外国人需连续居住10年；高度人才通过积分制大幅缩短</td></tr>
+          <tr><td><strong>适用情形</strong></td><td>HSP持有者，或虽持有其他签证（含技人国）但积分达标者</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s3-fasttrack">
+      <h3>🚀 3.2 两档快速通道</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>积分门槛</th><th>居住年限</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><strong>80分以上</strong></td><td>连续居住 <strong>1年</strong></td><td>最快永住通道（2017年4月新设）</td></tr>
+          <tr><td><strong>70分以上</strong></td><td>连续居住 <strong>3年</strong></td><td>标准HSP优惠通道（2012年设立）</td></tr>
+        </tbody>
+      </table></div>
+      <div class="callout important">
+        <div class="callout-title">⚡ 对比参考</div>
+        <p>普通技人国签证持有者申请永住需连续居住 <strong>10年</strong>（其中5年以上需持就劳签证）。80分高度人才仅需 <strong>1年</strong>。</p>
+      </div>
+    </div>
+
+    <div class="subsection" id="s3-retroactive">
+      <h3>🔄 3.2.2 追溯计算规则（遡り・みなし）</h3>
+      <div class="callout tip">
+        <div class="callout-title">💡 关键发现</div>
+        <p><strong>您不必先变更为HSP签证才能使用快速通道！</strong></p>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>场景</th><th>可否使用</th><th>具体要求</th></tr></thead>
+        <tbody>
+          <tr><td>持有HSP签证满1年/3年</td><td>✅ 可以</td><td>直接满足条件</td></tr>
+          <tr><td><strong>持有技人国，但过去1/3年间达到80/70分</strong></td><td><strong>✅ 可以</strong></td><td>需证明"追溯期间"每年都达标</td></tr>
+          <tr><td>最近1年才刚达到80分</td><td>✅ 可以</td><td>证明从1年前到现在持续满足</td></tr>
+          <tr><td>曾达70分但中途降至70分以下</td><td>❌ 不可以</td><td>必须<strong>连续</strong>满足</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>追溯使用的实操要点：</strong></p>
+      <ol>
+        <li>提交永住申请时，同时提交「ポイント計算表」</li>
+        <li>提供<strong>申请时点</strong>的积分证明材料</li>
+        <li>同时提供<strong>追溯起算点</strong>（1年前或3年前）的积分证明</li>
+        <li>追溯期间如有工作/收入变更，需提供每个时期的证明</li>
+      </ol>
+    </div>
+
+    <div class="subsection" id="s3-residence">
+      <h3>📅 3.2.3 连续居住期间的计算</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>规则</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><strong>起算日</strong></td><td>取得在留许可（技人国或HSP）的日期</td></tr>
+          <tr><td><strong>出境影响</strong></td><td>单次不超90天、年累计不超约150天 → 不影响</td></tr>
+          <tr><td><strong>长期出境</strong></td><td>单次超3个月 → "连续居住"中断，需重新起算</td></tr>
+        </tbody>
+      </table></div>
+      <div class="callout danger">
+        <div class="callout-title">🚨 行政书士提醒</div>
+        <p>即使使用追溯计算，入管局仍会审查追溯期间的<strong>全部纳税和社保记录</strong>。80分快速通道虽只要求居住1年，但税务和年金记录可能需要提供2年份的数据。</p>
+      </div>
+    </div>
+
+    <div class="subsection" id="s3-hsp2">
+      <h3>🔷 3.3 高度専門職2号</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>项目</th><th>1号</th><th>2号</th></tr></thead>
+        <tbody>
+          <tr><td><strong>在留期间</strong></td><td>5年（可更新）</td><td><strong>无期限</strong></td></tr>
+          <tr><td><strong>活动范围</strong></td><td>限于认定类型（イ/ロ/ハ）</td><td>几乎所有就劳活动</td></tr>
+          <tr><td><strong>变更条件</strong></td><td>积分≥70分</td><td>持有1号满<strong>3年以上</strong> + 持续满足70分</td></tr>
+          <tr><td><strong>与永住区别</strong></td><td>—</td><td>不需更新但仍有活动限制（永住无限制）</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <!-- ═══════ STAGE 4 ═══════ -->
+  <div class="section" id="s4-requirements">
+    <div class="section-header">
+      <span class="section-number" style="background:var(--accent-pink)">4</span>
+      <h2>永住申请的核心审核标准</h2>
+    </div>
+
+    <div class="subsection">
+      <h3>⚖️ 4.1 法律上的三大要件</h3>
+      <p><strong>法律依据</strong>：入管法第22条第2項 + 永住許可ガイドライン（令和8年2月24日改订）</p>
+
+      <h4>要件一：素行が善良であること（品行良好）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>审查内容</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><strong>定义</strong></td><td>遵守法律，作为社会一员在日常生活中不受非难</td></tr>
+          <tr><td><strong>刑事记录</strong></td><td>无罚金刑或拘禁刑记录</td></tr>
+          <tr><td><strong>交通违章</strong></td><td>频繁轻微违章累积可能影响；酒驾/无证 = 不合格</td></tr>
+          <tr><td><strong>入管法违反</strong></td><td>未经许可从事资格外活动 = 不合格</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>要件二：独立の生計を営むに足りる資産又は技能（经济自立）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>审查内容</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><strong>年收入基准</strong></td><td>单身约 <strong>300万日元+</strong>；每增1名家属约加 <strong>70～80万</strong></td></tr>
+          <tr><td><strong>审查范围</strong></td><td>综合评价家庭（世帯）整体经济状况</td></tr>
+          <tr><td><strong>HSP申请者</strong></td><td>年收入已达70/80分门槛者通常自动满足</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>要件三：国益适合（在留期间 + 公的义务）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>标准路径</th><th>HSP快速通道</th></tr></thead>
+        <tbody>
+          <tr><td>连续居住10年以上（其中5年持就劳签证）</td><td>80分 → 1年 / 70分 → 3年</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="s4-obligations">
+      <h3>🏛️ 公的義務的履行（最高重要度）</h3>
+      <div class="callout danger">
+        <div class="callout-title">🚨 永住申请被拒的首要原因</div>
+        <p>以下每一项都必须<strong>"适正に履行"</strong>——不仅要"已缴纳"，还要<strong>"按时缴纳"</strong>。</p>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>义务项目</th><th>审查范围</th><th>关键要求</th></tr></thead>
+        <tbody>
+          <tr><td><strong>住民税</strong></td><td>80分→1年 / 70分→3年 / 标准→5年</td><td>课税+纳税证明书逐年提供</td></tr>
+          <tr><td><strong>所得税</strong></td><td>同上</td><td>納税証明書（その3）</td></tr>
+          <tr><td><strong>年金</strong></td><td>过去 <strong>2年</strong></td><td>逐月缴纳记录</td></tr>
+          <tr><td><strong>健康保险</strong></td><td>过去 <strong>2年</strong></td><td>保险证 + 缴纳证明</td></tr>
+          <tr><td><strong>入管法届出</strong></td><td>全在留期间</td><td>转职/离职14天内提交届出</td></tr>
+        </tbody>
+      </table></div>
+      <div class="callout warning">
+        <div class="callout-title">⚠️ "滞纳"的严格定义</div>
+        <p>即使最终已补缴，审查期间内任何一个月"到期日未支付"的记录 → 入管局<strong>原则上做否定评价</strong>。</p>
+        <ul>
+          <li>住民税普通征收（自行缴纳）漏缴后补交</li>
+          <li>国民年金的追纳（2年时效内补交仍视为"未按时"）</li>
+          <li>切换工作期间的社保空白</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection" id="s4-docs">
+      <h3>📋 4.2 完整文件清单</h3>
+      <h4>通用文件</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>文件</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>永住許可申請書</td><td>ISA官网标准格式</td></tr>
+          <tr><td>2</td><td>证件照 4×3cm</td><td>3个月以内</td></tr>
+          <tr><td>3</td><td><strong>理由書</strong></td><td>日语撰写：申请理由、在日经历、未来计划</td></tr>
+          <tr><td>4</td><td>护照・在留卡</td><td>原件提示</td></tr>
+          <tr><td>5</td><td>住民票（世帯全員）</td><td>3个月以内发行</td></tr>
+          <tr><td>6</td><td>在职证明书</td><td>现雇主出具</td></tr>
+          <tr><td>7</td><td>收入印纸</td><td><strong>8,000日元</strong></td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>纳税・社保证明</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>文件</th><th>年份</th><th>取得</th></tr></thead>
+        <tbody>
+          <tr><td>8</td><td>住民税 課税証明書</td><td>80分→1年 / 70分→3年</td><td>区/市役所</td></tr>
+          <tr><td>9</td><td>住民税 納税証明書</td><td>同上</td><td>同上</td></tr>
+          <tr><td>10</td><td>国税 納税証明書（その3）</td><td>直近</td><td>税务署</td></tr>
+          <tr><td>11</td><td>年金記録（逐月）</td><td>过去2年</td><td>ねんきんネット / 年金事務所</td></tr>
+          <tr><td>12</td><td>健保缴纳证明</td><td>过去2年</td><td>区/市役所</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>HSP快速通道追加文件</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>文件</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>13</td><td>ポイント計算表（申請時点版）</td><td>当前满足70/80分</td></tr>
+          <tr><td>14</td><td>ポイント計算表（遡及時点版）</td><td>1/3年前也满足</td></tr>
+          <tr><td>15</td><td>各加分项证明材料一式</td><td>学历、JLPT、职历、收入等</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>身元保证</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>文件</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>16</td><td>身元保証書</td><td>日本人或永住者签署</td></tr>
+          <tr><td>17</td><td>保证人住民票</td><td>3个月以内</td></tr>
+          <tr><td>18</td><td>保证人在职/课税证明</td><td>证明经济能力</td></tr>
+        </tbody>
+      </table></div>
+      <div class="callout info">
+        <div class="callout-title">ℹ️ 关于身元保证人</div>
+        <p>保证人承担"道义上的保证"而非法律上的连带责任。通常为：日本人配偶、上司/同事、或已取得永住的友人。</p>
+      </div>
+    </div>
+
+    <div class="subsection" id="s4-rejection">
+      <h3>❌ 4.3 常见拒签原因详解</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>拒签原因</th><th>风险</th><th>说明</th><th>应对策略</th></tr></thead>
+        <tbody>
+          <tr><td><strong>税金滞纳</strong></td><td class="risk-high">🔴 极高</td><td>1个月迟缴即可能致拒</td><td>切换为特別徴収（公司代扣）</td></tr>
+          <tr><td><strong>年金漏缴</strong></td><td class="risk-high">🔴 极高</td><td>转职空白期最常见</td><td>转职后立即办理切换</td></tr>
+          <tr><td><strong>健保空白</strong></td><td class="risk-high">🔴 高</td><td>离职后未14日内加入国保</td><td>离职后立即到区役所办理</td></tr>
+          <tr><td><strong>长期离境</strong></td><td class="risk-mid">🟡 中高</td><td>单次&gt;90天或年累计&gt;150天</td><td>规划出行不超限</td></tr>
+          <tr><td><strong>转职未申报</strong></td><td class="risk-mid">🟡 中</td><td>14天内未提交届出</td><td>可事后补报</td></tr>
+          <tr><td><strong>交通违章</strong></td><td class="risk-mid">🟡 中</td><td>5次+轻微或1次重大</td><td>附理由书说明</td></tr>
+          <tr><td><strong>收入不稳定</strong></td><td class="risk-mid">🟡 中</td><td>审查期间某年大幅下降</td><td>提供稳定性证明</td></tr>
+          <tr><td><strong>理由书不足</strong></td><td class="risk-low">🟢 低中</td><td>逻辑不通</td><td>请行政书士代书</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <!-- ═══════ APPENDIX ═══════ -->
+  <div class="section" id="appendix-jskip">
+    <div class="section-header">
+      <span class="section-number" style="background:var(--accent-amber)">+</span>
+      <h2>附录</h2>
+    </div>
+
+    <div class="subsection">
+      <h3>🌟 A. J-Skip 特别高度人才制度（2023年4月新设）</h3>
+      <div class="callout info">
+        <div class="callout-title">ℹ️ J-Skip</div>
+        <p>面向特别优秀的高级人才，<strong>无需积分计算</strong>即可获得HSP待遇。</p>
+      </div>
+      <h4>J-Skip 1号</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>活动类型</th><th>条件</th></tr></thead>
+        <tbody>
+          <tr><td>研究 / 技术（イ/ロ）</td><td>硕士+ 且年收入 ≥ <strong>2,000万日元</strong></td></tr>
+          <tr><td>经营管理（ハ）</td><td>5年+经验 且年收入 ≥ <strong>4,000万日元</strong></td></tr>
+        </tbody>
+      </table></div>
+      <h4>J-Skip 2号（直通无期限在留）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>活动类型</th><th>条件</th></tr></thead>
+        <tbody>
+          <tr><td>研究 / 技术</td><td>硕士+ 且 ≥2,000万 且在日居住满1年</td></tr>
+          <tr><td>经营管理</td><td>5年+经验 且 ≥4,000万 且在日居住满1年</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="subsection" id="appendix-timeline">
+      <h3>📅 B. 核心时间线规划（行政书士建议）</h3>
+      <div class="timeline">入境日本（持技人国签证）
+  │
+  ├─ 立即开始：确保社保、税务全部通过公司代扣（特別徴収）
+  ├─ 入境时：进行HSP积分自我评估
+  │
+  ├─ 6个月后：如积分≥80分，开始准备追溯证明材料
+  │
+  ├─ 1年后（如80分）：
+  │   ├─ 选项A：直接以技人国身份申请永住（追溯计算）
+  │   └─ 选项B：先变更为HSP签证，再申请永住（更稳妥）
+  │
+  ├─ 3年后（如70分）：
+  │   ├─ 同选项A/B
+  │   └─ 如果条件满足，可同时考虑HSP2号
+  │
+  └─ 永住取得 🎉</div>
+    </div>
+
+    <div class="subsection" id="appendix-links">
+      <h3>🔗 C. 官方页面链接汇总</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>页面</th><th>链接</th></tr></thead>
+        <tbody>
+          <tr><td>ISA 首页</td><td><a href="https://www.moj.go.jp/isa/" target="_blank">moj.go.jp/isa</a></td></tr>
+          <tr><td>技人国 在留资格</td><td><a href="https://www.moj.go.jp/isa/applications/status/gijinkoku.html" target="_blank">gijinkoku.html</a></td></tr>
+          <tr><td>HSP 积分制度</td><td><a href="https://www.moj.go.jp/isa/publications/materials/newimmiact_3_index.html" target="_blank">newimmiact_3_index.html</a></td></tr>
+          <tr><td>HSP 积分评价</td><td><a href="https://www.moj.go.jp/isa/publications/materials/newimmiact_3_evaluate_index.html" target="_blank">newimmiact_3_evaluate_index.html</a></td></tr>
+          <tr><td>HSP 优遇措施</td><td><a href="https://www.moj.go.jp/isa/publications/materials/newimmiact_3_preferential_index.html" target="_blank">newimmiact_3_preferential_index.html</a></td></tr>
+          <tr><td>HSP Q&A</td><td><a href="https://www.moj.go.jp/isa/applications/resources/newimmiact_3_qa.html" target="_blank">newimmiact_3_qa.html</a></td></tr>
+          <tr><td>永住許可ガイドライン</td><td><a href="https://www.moj.go.jp/isa/publications/materials/nyukan_nyukan50.html" target="_blank">nyukan_nyukan50.html</a></td></tr>
+          <tr><td>积分计算表 PDF</td><td><a href="https://www.moj.go.jp/isa/content/930001655.pdf" target="_blank">📄 下载</a></td></tr>
+          <tr><td>配点明细表 PDF</td><td><a href="https://www.moj.go.jp/isa/content/930001658.pdf" target="_blank">📄 下载</a></td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>📞 咨询窗口</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>方式</th><th>号码</th><th>时间</th></tr></thead>
+        <tbody>
+          <tr><td>外国人在留综合信息中心</td><td><strong>0570-013904</strong></td><td>平日 8:30～17:15</td></tr>
+          <tr><td>IP电话/海外</td><td><strong>03-5796-7112</strong></td><td>同上</td></tr>
+          <tr><td>语言支持</td><td colspan="2">日语、英语</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><strong>免责声明</strong>：本知识库基于日本入管厅官方网站截至2026年4月的公开信息编制。入管政策可能变更，实际申请时请以入管局最新公告为准。</p>
+    <p>建议在正式申请前咨询持牌行政书士进行个案评估。</p>
+  </footer>
+
+</main>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
